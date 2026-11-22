@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendas de Alto Impacto | O Sistema dos 7 Passos para Vendedores de Elite</title>
+    <meta name="description" content="Pare de perder vendas para o 'vou pensar'. Multiplique sua conversão em 30% a 50% com os 7 Passos da Venda: 5 livros práticos (150 pág.) + 22+ scripts + planilha + app offline.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vendas de Alto Impacto — Multiplique Sua Conversão em +30% a 50%">
+    <meta property="og:description" content="5 livros práticos (150 pág.) + 22+ scripts prontos + planilha Excel/Sheets + app de bolso offline. Acesso imediato por R$ 97.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* PALETA 60-30-10 DE ALTO CONTRASTE (BASE PRETO PROFUNDO + BRANCO PURO + COR DE DESTAQUE ÚNICA) */
+        :root {
+            --bg-base: #050507;
+            --bg-surface: #0C0C10;
+            --bg-elevated: #13131A;
+            --border-subtle: rgba(255, 255, 255, 0.09);
+            --border-accent: rgba(0, 230, 118, 0.42);
+            --text-primary: #FFFFFF;
+            --text-secondary: #B4B4BE;
+            --text-muted: #787885;
+            --accent: #00E676;
+            --accent-mid: #00C853;
+            --accent-glow: rgba(0, 230, 118, 0.28);
+            --accent-soft: rgba(0, 230, 118, 0.10);
+            --danger: #FF5252;
+            --danger-soft: rgba(255, 82, 82, 0.10);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-base);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .font-display {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            letter-spacing: -0.025em;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Top Bar */
+        .top-notice {
+            background: #0B0B0F;
+            border-bottom: 1px solid var(--border-subtle);
+            text-align: center;
+            padding: 10px 16px;
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+        }
+        .top-notice span { color: var(--accent); font-weight: 700; }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(5, 5, 7, 0.86);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border-bottom: 1px solid var(--border-subtle);
+            padding: 15px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            font-size: 1.12rem;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .brand-mark {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: var(--accent);
+            display: grid;
+            place-items: center;
+            color: #050507;
+            font-weight: 800;
+            font-size: 0.95rem;
+            box-shadow: 0 0 18px var(--accent-glow);
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-family: inherit;
+        }
+        .nav-link:hover { color: var(--accent); }
+        .btn-nav {
+            background: var(--accent-soft);
+            border: 1px solid var(--border-accent);
+            color: var(--accent);
+            padding: 9px 18px;
+            border-radius: 10px;
+            font-size: 0.88rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .btn-nav:hover {
+            background: var(--accent);
+            color: #050507;
+            box-shadow: 0 0 22px var(--accent-glow);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            padding: 72px 0 64px;
+            background:
+                radial-gradient(ellipse 65% 48% at 50% -8%, rgba(0, 230, 118, 0.16), transparent 70%),
+                radial-gradient(circle at 82% 35%, rgba(0, 230, 118, 0.08), transparent 55%);
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.18fr 0.82fr;
+            gap: 48px;
+            align-items: center;
+        }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent-soft);
+            border: 1px solid var(--border-accent);
+            color: var(--accent);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 22px;
+        }
+        .eyebrow-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--accent);
+            box-shadow: 0 0 10px var(--accent);
+        }
+        .hero h1 {
+            font-size: clamp(2.2rem, 4.4vw, 3.55rem);
+            font-weight: 800;
+            line-height: 1.08;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+        }
+        .hero h1 .text-highlight {
+            color: var(--accent);
+            text-shadow: 0 0 32px rgba(0, 230, 118, 0.25);
+        }
+        .hero-sub {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            max-width: 590px;
+        }
+        .hero-sub strong { color: #FFFFFF; }
+
+        /* Hero ROI & Benefits Pill Grid */
+        .hero-roi-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 28px;
+            max-width: 580px;
+        }
+        .roi-item {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            padding: 10px 13px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.86rem;
+            color: var(--text-secondary);
+        }
+        .roi-item strong { color: #FFFFFF; display: block; font-size: 0.9rem; }
+        .roi-check {
+            width: 22px;
+            height: 22px;
+            border-radius: 6px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-weight: 800;
+            font-size: 0.8rem;
+            display: grid;
+            place-items: center;
+            flex-shrink: 0;
+        }
+
+        .cta-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 14px;
+        }
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(180deg, #00E676 0%, #00C853 100%);
+            color: #050507;
+            padding: 18px 34px;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            font-weight: 800;
+            text-decoration: none;
+            box-shadow: 0 10px 32px -4px rgba(0, 230, 118, 0.45);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 16px 40px -4px rgba(0, 230, 118, 0.68);
+        }
+        .trust-line {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 0.84rem;
+            color: var(--text-muted);
+        }
+        .trust-line span { display: inline-flex; align-items: center; gap: 6px; }
+        .trust-line strong { color: var(--text-secondary); font-weight: 600; }
+
+        /* 3D Book Stack Showcase */
+        .showcase-card {
+            background: linear-gradient(160deg, #111117 0%, #09090C 100%);
+            border: 1px solid var(--border-accent);
+            border-radius: 24px;
+            padding: 30px 22px;
+            position: relative;
+            box-shadow: 0 25px 65px -15px rgba(0, 0, 0, 0.95), 0 0 40px -15px rgba(0, 230, 118, 0.22);
+        }
+        .roi-banner-card {
+            background: var(--accent-soft);
+            border: 1px solid var(--border-accent);
+            border-radius: 10px;
+            padding: 10px 14px;
+            margin-bottom: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+        }
+        .roi-banner-card span { color: var(--text-secondary); }
+        .roi-banner-card strong { color: var(--accent); font-weight: 800; }
+        .books-fan {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+            margin-bottom: 22px;
+        }
+        .mini-book {
+            aspect-ratio: 2 / 3;
+            border-radius: 8px;
+            padding: 10px 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: linear-gradient(160deg, #181820 0%, #0B0B0F 100%);
+            border: 1px solid rgba(255,255,255,0.12);
+            box-shadow: -4px 8px 16px rgba(0,0,0,0.75);
+            transition: transform 0.25s ease, border-color 0.25s ease;
+        }
+        .mini-book:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent);
+        }
+        .mini-book:nth-child(4),
+        .mini-book:nth-child(5) {
+            border-color: rgba(0, 230, 118, 0.35);
+        }
+        .mini-book .vol { font-size: 0.62rem; font-weight: 800; color: var(--accent); text-transform: uppercase; }
+        .mini-book .btitle { font-size: 0.7rem; font-weight: 700; line-height: 1.2; color: #FFF; }
+        .showcase-meta {
+            border-top: 1px solid var(--border-subtle);
+            padding-top: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.85rem;
+        }
+        .showcase-meta .badge-digital {
+            background: var(--accent);
+            color: #050507;
+            padding: 5px 10px;
+            border-radius: 6px;
+            font-weight: 800;
+            font-size: 0.74rem;
+            white-space: nowrap;
+        }
+
+        /* Metrics Strip */
+        .metrics-strip {
+            border-top: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-subtle);
+            background: var(--bg-surface);
+            padding: 32px 0;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            text-align: center;
+        }
+        .metric-val {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 2.1rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            display: block;
+        }
+        .metric-val span { color: var(--accent); }
+        .metric-lbl { font-size: 0.85rem; color: var(--text-muted); }
+
+        /* Sections Common */
+        section { padding: 88px 0; }
+        .section-header {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 56px;
+        }
+        .section-tag {
+            color: var(--accent);
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .section-header h2 {
+            font-size: clamp(1.85rem, 3.5vw, 2.65rem);
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 16px;
+        }
+        .section-header p { color: var(--text-secondary); font-size: 1.05rem; }
+
+        /* Problem Grid */
+        .pain-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 16px;
+        }
+        .pain-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 14px;
+            padding: 22px 24px;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+        .pain-x {
+            width: 26px;
+            height: 26px;
+            border-radius: 6px;
+            background: var(--danger-soft);
+            color: var(--danger);
+            display: grid;
+            place-items: center;
+            font-weight: 800;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .pain-card p { color: var(--text-secondary); font-size: 0.96rem; }
+        .pain-card strong { color: var(--text-primary); }
+
+        .diagnosis-callout {
+            margin-top: 40px;
+            background: linear-gradient(90deg, var(--accent-soft), rgba(0, 230, 118, 0.02));
+            border-left: 3px solid var(--accent);
+            padding: 24px 28px;
+            border-radius: 0 14px 14px 0;
+            max-width: 820px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .diagnosis-callout p { font-size: 1.08rem; color: var(--text-primary); }
+
+        /* Books Bento Grid */
+        .books-section { background: var(--bg-surface); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); }
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+        .book-card {
+            background: var(--bg-base);
+            border: 1px solid var(--border-subtle);
+            border-radius: 18px;
+            padding: 30px;
+            transition: border-color 0.25s ease, transform 0.25s ease;
+        }
+        .book-card:hover {
+            border-color: var(--border-accent);
+            transform: translateY(-4px);
+        }
+        .book-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+        .vol-pill {
+            background: var(--accent-soft);
+            color: var(--accent);
+            border: 1px solid rgba(0, 230, 118, 0.28);
+            font-size: 0.76rem;
+            font-weight: 800;
+            padding: 5px 12px;
+            border-radius: 999px;
+        }
+        .step-pill {
+            font-size: 0.76rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+        .book-card h3 { font-size: 1.35rem; margin-bottom: 6px; }
+        .book-role { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px; }
+        .book-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+        .book-list li {
+            font-size: 0.93rem;
+            color: var(--text-secondary);
+            padding-left: 22px;
+            position: relative;
+        }
+        .book-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        /* Bonus Grid */
+        .bonus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        .bonus-card {
+            background: linear-gradient(180deg, var(--bg-elevated) 0%, var(--bg-surface) 100%);
+            border: 1px solid var(--border-accent);
+            border-radius: 18px;
+            padding: 28px;
+            position: relative;
+        }
+        .bonus-tag {
+            display: inline-block;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 0.75rem;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-bottom: 14px;
+        }
+        .bonus-card h3 { font-size: 1.2rem; margin-bottom: 10px; }
+        .bonus-card p { color: var(--text-secondary); font-size: 0.94rem; }
+
+        /* Authority Bar */
+        .science-box {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 20px;
+            padding: 44px 32px;
+            text-align: center;
+        }
+        .authors-pills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 28px;
+        }
+        .author-pill {
+            background: var(--bg-base);
+            border: 1px solid var(--border-subtle);
+            padding: 10px 18px;
+            border-radius: 10px;
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+        .author-pill strong { color: var(--accent); }
+
+        /* Testimonials */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 22px;
+        }
+        .review-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            padding: 26px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .review-stars { color: var(--accent); letter-spacing: 2px; font-size: 0.95rem; margin-bottom: 12px; }
+        .review-body { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 20px; }
+        .reviewer { display: flex; align-items: center; gap: 12px; }
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--accent-soft);
+            border: 1px solid var(--border-accent);
+            color: var(--accent);
+            font-weight: 800;
+            font-size: 0.85rem;
+            display: grid;
+            place-items: center;
+        }
+        .reviewer strong { display: block; font-size: 0.92rem; }
+        .reviewer span { font-size: 0.8rem; color: var(--text-muted); }
+
+        /* Pricing Section */
+        .pricing-section {
+            background: radial-gradient(circle at 50% 20%, rgba(0, 230, 118, 0.11), transparent 60%), var(--bg-surface);
+            border-top: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        .offer-box {
+            max-width: 560px;
+            margin: 0 auto;
+            background: var(--bg-base);
+            border: 1.5px solid var(--border-accent);
+            border-radius: 24px;
+            padding: 44px 36px;
+            text-align: center;
+            box-shadow: 0 30px 70px -20px rgba(0,0,0,0.95), 0 0 45px -18px var(--accent-glow);
+        }
+        .offer-anchor {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+        .offer-anchor s { color: var(--danger); }
+        .offer-price {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1;
+            color: var(--text-primary);
+            margin: 12px 0 8px;
+        }
+        .offer-price small { font-size: 1.5rem; color: var(--accent); vertical-align: super; }
+        .offer-installments { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 28px; }
+        .offer-checklist {
+            list-style: none;
+            text-align: left;
+            border-top: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-subtle);
+            padding: 24px 0;
+            margin-bottom: 28px;
+            display: grid;
+            gap: 12px;
+        }
+        .offer-checklist li {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            padding-left: 26px;
+            position: relative;
+        }
+        .offer-checklist li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 800;
+        }
+        .offer-checklist li strong { color: var(--text-primary); }
+        .btn-checkout {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background: linear-gradient(180deg, #00E676 0%, #00C853 100%);
+            color: #050507;
+            padding: 20px 24px;
+            border-radius: 14px;
+            font-size: 1.12rem;
+            font-weight: 800;
+            text-decoration: none;
+            box-shadow: 0 12px 34px -4px rgba(0, 230, 118, 0.5);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .btn-checkout:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 42px -4px rgba(0, 230, 118, 0.72);
+        }
+        .warranty-box {
+            margin-top: 22px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 14px 16px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+        .warranty-box strong { color: var(--accent); display: block; margin-bottom: 2px; }
+
+        /* Interactive FAQ */
+        .faq-wrap { max-width: 780px; margin: 0 auto; display: grid; gap: 12px; }
+        details {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 14px;
+            padding: 0 22px;
+            transition: border-color 0.2s;
+        }
+        details[open] { border-color: var(--border-accent); }
+        summary {
+            padding: 20px 0;
+            font-weight: 600;
+            font-size: 1.02rem;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-primary);
+        }
+        summary::-webkit-details-marker { display: none; }
+        summary::after {
+            content: '+';
+            font-size: 1.4rem;
+            color: var(--accent);
+            font-weight: 400;
+            transition: transform 0.2s;
+        }
+        details[open] summary::after { transform: rotate(45deg); }
+        details p {
+            padding-bottom: 20px;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.65;
+        }
+
+        /* Two Paths - Upgraded Contrast Showdown */
+        .paths-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            max-width: 960px;
+            margin: 0 auto;
+            align-items: stretch;
+        }
+        .path-card {
+            background: var(--bg-surface);
+            border: 1px solid rgba(255, 82, 82, 0.25);
+            border-radius: 20px;
+            padding: 32px 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .path-card.highlight-path {
+            background: linear-gradient(160deg, #111815 0%, #0A0D0C 100%);
+            border: 1.5px solid var(--border-accent);
+            box-shadow: 0 24px 60px -18px rgba(0, 230, 118, 0.22);
+        }
+        .path-badge-bad {
+            display: inline-block;
+            background: var(--danger-soft);
+            color: var(--danger);
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-bottom: 14px;
+            width: fit-content;
+        }
+        .path-badge-good {
+            display: inline-block;
+            background: var(--accent-soft);
+            color: var(--accent);
+            border: 1px solid rgba(0, 230, 118, 0.3);
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-bottom: 14px;
+            width: fit-content;
+        }
+        .path-card h3 { font-size: 1.32rem; margin-bottom: 14px; }
+        .path-list {
+            list-style: none;
+            display: grid;
+            gap: 10px;
+            margin-bottom: 26px;
+        }
+        .path-list li {
+            font-size: 0.92rem;
+            color: var(--text-secondary);
+            padding-left: 22px;
+            position: relative;
+        }
+        .path-list.bad li::before {
+            content: '✕';
+            position: absolute;
+            left: 0;
+            color: var(--danger);
+            font-weight: 800;
+        }
+        .path-list.good li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 800;
+        }
+        .path-list.good li strong { color: #FFFFFF; }
+        .btn-stagnation {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background: rgba(255, 82, 82, 0.08);
+            border: 1px solid rgba(255, 82, 82, 0.32);
+            color: #FCA5A5;
+            padding: 16px 18px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            font-family: inherit;
+            transition: all 0.2s ease;
+        }
+        .btn-stagnation:hover {
+            background: rgba(255, 82, 82, 0.15);
+            border-color: var(--danger);
+            color: #FFFFFF;
+        }
+
+        /* Modal for Support / Legal / Stagnation Wake-up */
+        .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.82);
+            backdrop-filter: blur(6px);
+            z-index: 999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .modal-backdrop.open { display: flex; }
+        .modal-card {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-accent);
+            border-radius: 20px;
+            max-width: 480px;
+            width: 100%;
+            padding: 28px;
+            position: relative;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
+        }
+        .modal-close {
+            position: absolute;
+            top: 16px;
+            right: 18px;
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 1.4rem;
+            cursor: pointer;
+        }
+        .modal-close:hover { color: #FFFFFF; }
+        .modal-card h3 { font-size: 1.3rem; margin-bottom: 10px; color: #FFFFFF; }
+        .modal-card p { font-size: 0.94rem; color: var(--text-secondary); margin-bottom: 18px; }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border-subtle);
+            padding: 40px 0;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.86rem;
+        }
+        footer .links { margin-top: 12px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        footer a, footer button {
+            color: var(--text-secondary);
+            text-decoration: none;
+            background: none;
+            border: none;
+            font-family: inherit;
+            font-size: 0.86rem;
+            cursor: pointer;
+        }
+        footer a:hover, footer button:hover { color: var(--accent); }
+
+        @media (max-width: 900px) {
+            .hero-grid { grid-template-columns: 1fr; text-align: center; }
+            .hero-sub { margin-left: auto; margin-right: auto; }
+            .hero-roi-grid { margin-left: auto; margin-right: auto; text-align: left; }
+            .cta-group { align-items: center; }
+            .trust-line { justify-content: center; }
+            .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+            .nav-links .hide-mobile { display: none; }
+        }
+        @media (max-width: 520px) {
+            section { padding: 64px 0; }
+            .hero-roi-grid { grid-template-columns: 1fr; }
+            .offer-box { padding: 32px 22px; }
+            .offer-price { font-size: 3.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-notice">
+        <span>COLEÇÃO COMPLETA (5 LIVROS DE 30 PÁG. + PLANILHA + APP OFFLINE):</span> Acesso imediato por R$ 97 à vista ou em até 12x
+    </div>
+
+    <header>
+        <nav class="container">
+            <a href="#" class="brand">
+                <span class="brand-mark">V</span>
+                Vendas de Alto Impacto
+            </a>
+            <div class="nav-links">
+                <a href="#metodo" class="nav-link hide-mobile">Os 5 Volumes</a>
+                <a href="#bonus" class="nav-link hide-mobile">Ferramentas</a>
+                <button type="button" class="nav-link" onclick="openModal('suporte')">Suporte</button>
+                <a href="#oferta" class="btn-nav">Acessar o Método</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <div class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        Sistema Comercial dos 7 Passos • Alta Conversão
+                    </div>
+                    <h1>
+                        Multiplique suas comissões e pare de perder vendas para o <span class="text-highlight">"vou pensar e te aviso"</span>.
+                    </h1>
+                    <p class="hero-sub">
+                        O sistema completo dos <strong>7 Passos da Venda</strong> em <strong>5 livros práticos (150 páginas) + 22+ scripts prontos</strong> para transformar contatos frios em contratos assinados — sem dar desconto e sem parecer insistente.
+                    </p>
+
+                    <div class="hero-roi-grid">
+                        <div class="roi-item">
+                            <span class="roi-check">↑</span>
+                            <div><strong>+30% a 50% de Conversão</strong>Você pode fechar mais propostas com o mesmo fluxo de leads</div>
+                        </div>
+                        <div class="roi-item">
+                            <span class="roi-check">$</span>
+                            <div><strong>ROI na 1ª Venda Fechada</strong>Uma única comissão pode pagar de 5x a 20x este sistema</div>
+                        </div>
+                        <div class="roi-item">
+                            <span class="roi-check">✓</span>
+                            <div><strong>Blindagem de Margem</strong>Contorne "tá caro" sem queimar seu lucro</div>
+                        </div>
+                        <div class="roi-item">
+                            <span class="roi-check">⚡</span>
+                            <div><strong>Aplicação Imediata</strong>Copie os 22+ scripts no WhatsApp hoje mesmo</div>
+                        </div>
+                    </div>
+
+                    <div class="cta-group">
+                        <a href="#oferta" class="btn-primary">QUERO MULTIPLICAR MINHAS VENDAS AGORA →</a>
+                        <div class="trust-line">
+                            <span>✓ <strong>Acesso imediato</strong> na Cakto</span>
+                            <span>✓ <strong>Garantia blindada</strong> de 7 dias</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase-card">
+                    <div class="roi-banner-card">
+                        <span>Retorno estimado:</span>
+                        <strong>1 venda pode pagar o investimento</strong>
+                    </div>
+                    <div class="books-fan">
+                        <div class="mini-book">
+                            <span class="vol">Vol. 01</span>
+                            <span class="btitle">O Ímã de Clientes</span>
+                        </div>
+                        <div class="mini-book">
+                            <span class="vol">Vol. 02</span>
+                            <span class="btitle">A Mente do Cliente</span>
+                        </div>
+                        <div class="mini-book">
+                            <span class="vol">Vol. 03</span>
+                            <span class="btitle">A Dança da Venda</span>
+                        </div>
+                        <div class="mini-book">
+                            <span class="vol">Vol. 04</span>
+                            <span class="btitle">Assinatura do Sucesso</span>
+                        </div>
+                        <div class="mini-book">
+                            <span class="vol">Vol. 05</span>
+                            <span class="btitle">Scripts Poderosos</span>
+                        </div>
+                    </div>
+                    <div class="showcase-meta">
+                        <div>
+                            <strong style="display:block; color:#FFF;">Série Vendas de Alto Impacto</strong>
+                            <span style="color:var(--text-muted); font-size:0.8rem;">5 Volumes + Planilha + Checklists</span>
+                        </div>
+                        <span class="badge-digital">Bônus PDF + App Offline</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="metrics-strip">
+            <div class="container metrics-grid">
+                <div>
+                    <span class="metric-val">150</span>
+                    <span class="metric-lbl">Páginas em 5 volumes de 30 pág.</span>
+                </div>
+                <div>
+                    <span class="metric-val">50<span>+</span></span>
+                    <span class="metric-lbl">Técnicas de campo</span>
+                </div>
+                <div>
+                    <span class="metric-val">22<span>+</span></span>
+                    <span class="metric-lbl">Scripts prontos para copiar</span>
+                </div>
+                <div>
+                    <span class="metric-val">30-50<span>%</span></span>
+                    <span class="metric-lbl">Ganho médio de conversão</span>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">O Diagnóstico</span>
+                    <h2>Por que bons vendedores trabalham 12 horas por dia e continuam batendo na trave?</h2>
+                    <p>Não falta esforço no seu dia. Falta processo previsível nas 4 horas decisivas diante do cliente.</p>
+                </div>
+
+                <div class="pain-grid">
+                    <div class="pain-card">
+                        <span class="pain-x">✕</span>
+                        <p><strong>Volume alto, fechamento baixo:</strong> você faz dezenas de ligações e mensagens por dia, mas a maioria morre no vácuo.</p>
+                    </div>
+                    <div class="pain-card">
+                        <span class="pain-x">✕</span>
+                        <p><strong>A armadilha do "vou pensar":</strong> o cliente elogia sua apresentação, concorda com tudo e desaparece logo depois.</p>
+                    </div>
+                    <div class="pain-card">
+                        <span class="pain-x">✕</span>
+                        <p><strong>Medo de cobrar a decisão:</strong> você trava na hora de pedir o fechamento para não soar agressivo ou desesperado.</p>
+                    </div>
+                    <div class="pain-card">
+                        <span class="pain-x">✕</span>
+                        <p><strong>Guerra de preço:</strong> você perde negócios para concorrentes mais caros porque não ancorou valor antes da proposta.</p>
+                    </div>
+                    <div class="pain-card">
+                        <span class="pain-x">✕</span>
+                        <p><strong>Venda no improviso:</strong> cada atendimento depende do seu humor do dia, sem roteiro nem diagnóstico estruturado.</p>
+                    </div>
+                    <div class="pain-card">
+                        <span class="pain-x">✕</span>
+                        <p><strong>Objeções repetidas:</strong> "está caro", "falo com meu sócio" e "agora não é o momento" derrubam sua margem toda semana.</p>
+                    </div>
+                </div>
+
+                <div class="diagnosis-callout">
+                    <p><strong>A regra de ouro da mesa comercial:</strong> quando você não conduz a conversa com método, o cliente conduz você para a saída mais educada possível. É exatamente isso que os 5 volumes corrigem.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="books-section" id="metodo">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Os 7 Passos da Venda</span>
+                    <h2>5 Livros Práticos Cobrindo Cada Etapa da Venda</h2>
+                    <p>30 páginas objetivas por volume — da primeira linha de prospecção ao pós-venda multiplicador.</p>
+                </div>
+
+                <div class="books-grid">
+                    <article class="book-card">
+                        <div class="book-top">
+                            <span class="vol-pill">VOLUME 01</span>
+                            <span class="step-pill">Passo 1 • 30 pág.</span>
+                        </div>
+                        <h3>O Ímã de Clientes</h3>
+                        <p class="book-role">Prospecção Ativa, Lista Infinita e Copywriting</p>
+                        <ul class="book-list">
+                            <li>Framework CADIF e Regra dos 100 Nomes para filtrar compradores</li>
+                            <li>Bloco de Ouro de 90 minutos para manter o topo do funil cheio</li>
+                            <li>Estrutura PAS e 12 gatilhos de Cialdini sem manipulação</li>
+                            <li>Roteiros de prospecção no WhatsApp, telefone e presencial</li>
+                        </ul>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-top">
+                            <span class="vol-pill">VOLUME 02</span>
+                            <span class="step-pill">Passo 2 • 30 pág.</span>
+                        </div>
+                        <h3>A Mente do Cliente</h3>
+                        <p class="book-role">Abordagem de Alta Postura e Neuromarketing</p>
+                        <ul class="book-list">
+                            <li>Como vender a reunião sem entregar preço antes da hora</li>
+                            <li>Adaptação rápida aos canais Visual, Auditivo e Cinestésico</li>
+                            <li>7 técnicas de rapport imediato nos primeiros 90 segundos</li>
+                            <li>Matriz DISC prática: como abordar e conduzir cada perfil</li>
+                        </ul>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-top">
+                            <span class="vol-pill">VOLUME 03</span>
+                            <span class="step-pill">Passos 3, 4 e 5 • 30 pág.</span>
+                        </div>
+                        <h3>A Dança da Venda</h3>
+                        <p class="book-role">Diagnóstico SPIN, Persuasão e Negociação</p>
+                        <ul class="book-list">
+                            <li>SPIN Selling e Técnica do Eco para o cliente assumir a urgência</li>
+                            <li>Storytelling de prova e apresentações enxutas que envolvem</li>
+                            <li>Método EEA para contornar objeções sem confrontar</li>
+                            <li>Negociação de margem e troca de variáveis (Chris Voss)</li>
+                        </ul>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-top">
+                            <span class="vol-pill">VOLUME 04</span>
+                            <span class="step-pill">Passos 6 e 7 • 30 pág.</span>
+                        </div>
+                        <h3>A Assinatura do Sucesso</h3>
+                        <p class="book-role">Fechamento Imediato e Pós-Venda Multiplicador</p>
+                        <ul class="book-list">
+                            <li>Os 7 sinais de compra e o Termômetro da sala de reunião</li>
+                            <li>10 técnicas de fechamento direto, por alternativa e risco zero</li>
+                            <li>Método das 3 perguntas para desarmar o "vou pensar"</li>
+                            <li>Pós-venda em 6 fases + extração de 3 indicações na mesa</li>
+                        </ul>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-top">
+                            <span class="vol-pill">VOLUME 05</span>
+                            <span class="step-pill">Arsenal Completo • 30 pág.</span>
+                        </div>
+                        <h3>Scripts Poderosos</h3>
+                        <p class="book-role">Manual de Bolso para Consulta Antes da Reunião</p>
+                        <ul class="book-list">
+                            <li>22+ scripts prontos para abertura, follow-up e fechamento</li>
+                            <li>Respostas exatas para as 12 objeções mais comuns do campo</li>
+                            <li>Gestão diária de pipeline e as 5 métricas vitais de conversão</li>
+                            <li>Checklists de rotina diária, semanal e mensal + Painel 7 Passos</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="bonus">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Ferramentas de Execução</span>
+                    <h2>3 Bônus GRATUITOS</h2>
+                    <p>Além dos 5 ebooks, você conta com estas ferramentas práticas prontas para rodar no celular ou computador grátis exclusivamente para você, profissional de Alto Impacto.</p>
+                </div>
+
+                <div class="bonus-grid">
+                    <div class="bonus-card">
+                        <span class="bonus-tag">BÔNUS 01 • EXCEL &amp; GOOGLE SHEETS</span>
+                        <h3>Planilha Automatizada de 6 Abas</h3>
+                        <p>Inclui Placar Diário dos 7 Passos (gerador automático para WhatsApp), Pipeline de Leads, Controle Semanal, Pós-Venda/NPS, Checklists e Dashboard de Métricas.</p>
+                    </div>
+                    <div class="bonus-card">
+                        <span class="bonus-tag">BÔNUS 02 • ARQUIVO ÚNICO OFFLINE</span>
+                        <h3>App de Bolso Offline (Celular &amp; PC)</h3>
+                        <p>Aplicativo interativo com Tour Guiado automático, Placar Diário (Realizado/Meta), Pipeline com botão direto de WhatsApp, busca dos 22+ scripts e checklists salvos no aparelho.</p>
+                    </div>
+                    <div class="bonus-card">
+                        <span class="bonus-tag">BÔNUS 03 • COLAS DE MESA IMPRIMÍVEIS</span>
+                        <h3>Guias Rápidos de Fechamento &amp; Rotina</h3>
+                        <p>Páginas táticas de 1 folha no fechamento dos manuais para revisar em 5 minutos antes de entrar em qualquer ligação ou reunião decisiva.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding-top: 0;">
+            <div class="container">
+                <div class="science-box">
+                    <span class="section-tag">Fundamentação Técnica</span>
+                    <h2 style="font-size: clamp(1.5rem, 3vw, 2.1rem); margin-bottom: 12px;">Zero "motivação vazia". 100% engenharia comportamental.</h2>
+                    <p style="color: var(--text-secondary); max-width: 720px; margin: 0 auto;">
+                        Cada capítulo traduz para o português claro e para a realidade do vendedor brasileiro os frameworks validados pelos maiores pesquisadores de negociação e decisão humana:
+                    </p>
+                    <div class="authors-pills">
+                        <div class="author-pill"><strong>Neil Rackham</strong> • SPIN Selling</div>
+                        <div class="author-pill"><strong>Robert Cialdini</strong> • Persuasão</div>
+                        <div class="author-pill"><strong>Chris Voss</strong> • Negociação Tática</div>
+                        <div class="author-pill"><strong>Daniel Kahneman</strong> • Decisão Rápida/Devagar</div>
+                        <div class="author-pill"><strong>Dale Carnegie</strong> • Relacionamento</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding-top: 20px;">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Quem Já Aplica</span>
+                    <h2>Vendedores reais. Resultados mensuráveis.</h2>
+                </div>
+
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars">★★★★★</div>
+                            <p class="review-body">"Em 30 dias aplicando os Volumes 1 e 2, minha conversão subiu de 15% para 38%. Só o capítulo de diagnóstico já pagou o investimento 10 vezes."</p>
+                        </div>
+                        <div class="reviewer">
+                            <div class="avatar">MC</div>
+                            <div>
+                                <strong>Marcos Castro</strong>
+                                <span>Executivo de Software B2B</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars">★★★★★</div>
+                            <p class="review-body">"Vendo há 8 anos no 'feeling'. Pela primeira vez tenho processo claro da abordagem ao fechamento. Bati meta nos últimos 3 meses seguidos."</p>
+                        </div>
+                        <div class="reviewer">
+                            <div class="avatar">AS</div>
+                            <div>
+                                <strong>Ana Paula Souza</strong>
+                                <span>Representante Comercial</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars">★★★★★</div>
+                            <p class="review-body">"Os scripts do Volume 5 me salvaram. Antes eu travava quando o cliente falava de preço. Hoje respondo com calma e seguro a margem."</p>
+                        </div>
+                        <div class="reviewer">
+                            <div class="avatar">RS</div>
+                            <div>
+                                <strong>Ricardo Silva</strong>
+                                <span>Consultor de Seguros</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-section" id="oferta">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Acesso Imediato</span>
+                    <h2>Uma única venda fechada pode te fazer recuperar o investimento.</h2>
+                    <p>Enquanto uma consultoria comercial custa R$ 500/hora, você leva o sistema completo para consultar a carreira inteira.</p>
+                </div>
+
+                <div class="offer-box">
+                    <div class="offer-anchor">Valor separado dos 5 volumes + 3 ferramentas: <s>R$ 1.497,00</s></div>
+                    <div class="offer-price"><small>R$</small> 97</div>
+                    <div class="offer-installments">investimento único à vista ou em até 12x no cartão</div>
+
+                    <ul class="offer-checklist">
+                        <li><strong>5 Livros Digitais Completos</strong> (150 páginas em PDF — 30 pág. por volume)</li>
+                        <li><strong>Sistema Completo dos 7 Passos da Venda</strong> (da prospecção ao pós-venda)</li>
+                        <li><strong>22+ Scripts Prontos</strong> para WhatsApp, telefone, LinkedIn e reunião</li>
+                        <li><strong>Bônus 1:</strong> Planilha Automatizada de 6 Abas (Excel e Google Sheets)</li>
+                        <li><strong>Bônus 2:</strong> App de Bolso Offline com Tour Guiado (Android, iPhone e PC)</li>
+                        <li><strong>Bônus 3:</strong> Checklists e Guias Rápidos de Fechamento imprimíveis</li>
+                        <li><strong>Acesso Vitalício</strong> na área de membros Cakto sem mensalidades</li>
+                    </ul>
+
+                    <a href="https://pay.cakto.com.br/7z3p7n3_642489" class="btn-checkout" target="_blank" rel="noopener">
+                        GARANTIR MEU ACESSO AGORA →
+                    </a>
+
+                    <div class="warranty-box">
+                        <strong>🛡️ Garantia Incondicional de 7 Dias</strong>
+                        Leia os 5 volumes e teste os scripts. Se não sentir evolução real na sua segurança para fechar vendas, devolvemos 100% do valor sem perguntas.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="duvidas">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Dúvidas Comuns</span>
+                    <h2>Perguntas Frequentes</h2>
+                </div>
+
+                <div class="faq-wrap">
+                    <details open>
+                        <summary>Funciona para o meu segmento de vendas?</summary>
+                        <p>Sim. Os princípios de diagnóstico, ancoragem de valor e fechamento são baseados em comportamento humano de compra. Funcionam tanto para venda direta e varejo quanto para serviços, consultoria e vendas B2B complexas.</p>
+                    </details>
+                    <details>
+                        <summary>Como e quando recebo o acesso aos livros, planilha e app?</summary>
+                        <p>Imediatamente após a confirmação do pagamento pela CAKTO. Você acessa a área de membros e faz o download direto dos 5 PDFs (30 páginas cada), da Planilha Excel/Sheets de 6 abas e do arquivo do App de Bolso Offline para usar no celular ou computador sem precisar de internet.</p>
+                    </details>
+                    <details>
+                        <summary>Sou iniciante em vendas, vou conseguir aplicar?</summary>
+                        <p>Sim. A coleção foi organizada em ordem cronológica dos 7 Passos da Venda exatamente para quem precisa construir uma base sólida desde a primeira abordagem, sem jargões complicados.</p>
+                    </details>
+                    <details>
+                        <summary>Posso parcelar no cartão?</summary>
+                        <p>Sim, o checkout seguro da CAKTO permite pagamento via PIX (liberação instantânea) ou cartão de crédito em até 12x.</p>
+                    </details>
+                    <details>
+                        <summary>E se eu não gostar do material?</summary>
+                        <p>Você tem 7 dias corridos de garantia incondicional. Basta solicitar o reembolso dentro do prazo na própria plataforma e devolvemos 100% do seu investimento sem burocracia.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding-top: 0;">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Decisão</span>
+                    <h2>Dois caminhos a partir da sua próxima abordagem</h2>
+                </div>
+
+                <div class="paths-grid">
+                    <div class="path-card">
+                        <div>
+                            <span class="path-badge-bad">Opção 01 • Zona de Estagnação</span>
+                            <h3 style="color: var(--danger);">Continuar vendendo no improviso</h3>
+                            <ul class="path-list bad">
+                                <li>Fazer dezenas de contatos diários e ouvir "vou pensar" toda semana</li>
+                                <li>Queimar sua comissão dando desconto para tentar salvar a venda</li>
+                                <li>Não saber onde o funil está travando nem como pedir indicações</li>
+                                <li>Depender da sorte no fim do mês para bater a meta</li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn-stagnation" onclick="openModal('estagnacao')">
+                            CONTINUAR ESTAGNADO E PERDENDO VENDAS
+                        </button>
+                    </div>
+
+                    <div class="path-card highlight-path">
+                        <div>
+                            <span class="path-badge-good">Opção 02 • Alta Conversão</span>
+                            <h3 style="color: var(--accent);">Assumir o controle da mesa com os 7 Passos</h3>
+                            <ul class="path-list good">
+                                <li><strong>Ganho médio de +30% a 50% na conversão</strong> com processo previsível</li>
+                                <li><strong>22+ scripts prontos</strong> para contornar "tá caro" e "vou pensar"</li>
+                                <li><strong>Placar Diário + Planilha + App Offline</strong> para medir cada etapa</li>
+                                <li><strong>ROI imediato:</strong> O investimento pode se pagar com apenas UMA venda.</li>
+                            </ul>
+                        </div>
+                        <a href="#oferta" class="btn-primary" style="width:100%;">
+                            QUERO AUMENTAR MINHA CONVERSÃO EM +30% A 50% →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Vendas de Alto Impacto. Todos os direitos reservados.</p>
+            <div class="links">
+                <button type="button" onclick="openModal('termos')">Termos de Uso</button>
+                <button type="button" onclick="openModal('privacidade')">Política de Privacidade</button>
+                <button type="button" onclick="openModal('suporte')">Suporte</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL INTERATIVO (SUPORTE, TERMOS, PRIVACIDADE E ALERTA CAMINHO 1) -->
+    <div id="info-modal" class="modal-backdrop" onclick="if(event.target===this) closeModal()">
+        <div class="modal-card">
+            <button type="button" class="modal-close" onclick="closeModal()">&times;</button>
+            <h3 id="modal-title">Central de Suporte</h3>
+            <p id="modal-body"></p>
+            <div id="modal-actions"></div>
+        </div>
+    </div>
+
+    <script>
+        const MODALS = {
+            suporte: {
+                title: 'Central de Suporte & Acesso Cakto',
+                body: 'Precisa de ajuda com seu pedido, download dos 5 PDFs, Planilha de 6 Abas ou App Offline? Nossa equipe responde rapidamente pelo e-mail abaixo ou diretamente dentro da área de membros da Cakto.<br><br><strong>E-mail oficial:</strong> cortesvendedorcampeao@gmail.com<br><strong>Garantia:</strong> 7 dias incondicionais direto na plataforma.',
+                cta: '<a href="#duvidas" class="btn-primary" style="width:100%;" onclick="closeModal()">Ver Perguntas Frequentes</a>'
+            },
+            estagnacao: {
+                title: 'Tem certeza que quer deixar comissões na mesa?',
+                body: 'Cada semana atendendo no improviso custa vendas que já estavam prontas para fechar — e que vão para o concorrente que sabe conduzir a decisão.<br><br>Com apenas <strong>R$ 97</strong> (menos que uma única comissão), você destrava os <strong>7 Passos da Venda</strong> com garantia total de 7 dias.',
+                cta: '<a href="#oferta" class="btn-primary" style="width:100%;" onclick="closeModal()">QUERO AUMENTAR MINHA CONVERSÃO AGORA →</a>'
+            },
+            termos: {
+                title: 'Termos de Uso',
+                body: 'A Série Vendas de Alto Impacto (5 Volumes em PDF, Planilha de Controle e App de Bolso Offline) é licenciada para uso individual e profissional do comprador. É proibida a revenda, distribuição pública ou reprodução comercial sem autorização expressa do autor.',
+                cta: '<button type="button" class="btn-primary" style="width:100%;" onclick="closeModal()">Entendi</button>'
+            },
+            privacidade: {
+                title: 'Política de Privacidade (LGPD)',
+                body: 'Seus dados de pagamento são processados exclusivamente em ambiente criptografado pela plataforma CAKTO. Além disso, o App de Bolso Offline salva seus números e leads apenas na memória local do seu próprio dispositivo, sem envio para servidores externos.',
+                cta: '<button type="button" class="btn-primary" style="width:100%;" onclick="closeModal()">Fechar</button>'
+            }
+        };
+
+        function openModal(key) {
+            const data = MODALS[key];
+            if (!data) return;
+            document.getElementById('modal-title').textContent = data.title;
+            document.getElementById('modal-body').innerHTML = data.body;
+            document.getElementById('modal-actions').innerHTML = data.cta;
+            document.getElementById('info-modal').classList.add('open');
+        }
+
+        function closeModal() {
+            document.getElementById('info-modal').classList.remove('open');
+        }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Série Vendas de Alto Impacto",
+      "description": "5 livros digitais profissionais (150 páginas) + 22+ scripts prontos + planilha de 6 abas + app de bolso offline para aumentar conversão em vendas.",
+      "brand": { "@type": "Brand", "name": "Vendas de Alto Impacto" },
+      "offers": {
+        "@type": "Offer",
+        "price": "97.00",
+        "priceCurrency": "BRL",
+        "availability": "https://schema.org/InStock",
+        "url": "https://pay.cakto.com.br/7z3p7n3_642489"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "127"
+      }
+    }
+    </script>
+</body>
+</html>
