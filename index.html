@@ -1,6 +1,24 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PL8345X6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('a[href*="cakto"]').forEach(function (link) {
+        link.addEventListener('click', function () {
+          gtag('event', 'clique_checkout_cakto', {
+            destino: link.href,
+            texto_botao: (link.innerText || '').trim()
+          });
+        });
+      });
+    });
+  </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vendas de Alto Impacto | O Sistema dos 7 Passos para Vendedores de Elite</title>
@@ -866,6 +884,24 @@
     </div>
 
     <header>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PL8345X6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('a[href*="cakto"]').forEach(function (link) {
+        link.addEventListener('click', function () {
+          gtag('event', 'clique_checkout_cakto', {
+            destino: link.href,
+            texto_botao: (link.innerText || '').trim()
+          });
+        });
+      });
+    });
+  </script>
         <nav class="container">
             <a href="#" class="brand">
                 <span class="brand-mark">V</span>
@@ -1403,3 +1439,4 @@
     </script>
 </body>
 </html>
+
