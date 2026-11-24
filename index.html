@@ -2,7 +2,24 @@
 <html lang="pt-BR" class="scroll-smooth">
 <head>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PL8345X6"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJGHYJCEP9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VJGHYJCEP9');
+
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('a[href*="cakto"]').forEach(function (link) {
+        link.addEventListener('click', function () {
+          gtag('event', 'clique_checkout_cakto', {
+            destino: link.href,
+            texto_botao: (link.innerText || '').trim()
+          });
+        });
+      });
+    });
+  </script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -885,7 +902,24 @@
 
     <header>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PL8345X6"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJGHYJCEP9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VJGHYJCEP9');
+
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('a[href*="cakto"]').forEach(function (link) {
+        link.addEventListener('click', function () {
+          gtag('event', 'clique_checkout_cakto', {
+            destino: link.href,
+            texto_botao: (link.innerText || '').trim()
+          });
+        });
+      });
+    });
+  </script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -1439,4 +1473,5 @@
     </script>
 </body>
 </html>
+
 
